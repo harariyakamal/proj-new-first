@@ -31,8 +31,33 @@
                     <view key="view" contentMode="scaleToFill" id="HV8-vm-Lyj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gHX-0Y-cwa">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCellID" id="pQT-Bi-UwK">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="350" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQT-Bi-UwK" id="JJ8-Sf-tv4">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="A0Q-as-Cei" id="BBP-wX-D9b"/>
+                                    <outlet property="delegate" destination="A0Q-as-Cei" id="PvH-gy-eMm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VL8-fj-8ck"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHX-0Y-cwa" firstAttribute="leading" secondItem="HV8-vm-Lyj" secondAttribute="leading" id="99n-Dv-qtS"/>
+                            <constraint firstItem="VL8-fj-8ck" firstAttribute="bottom" secondItem="gHX-0Y-cwa" secondAttribute="bottom" id="nRP-iD-DGp"/>
+                            <constraint firstItem="gHX-0Y-cwa" firstAttribute="top" secondItem="VL8-fj-8ck" secondAttribute="top" id="zMI-ho-cVB"/>
+                            <constraint firstItem="VL8-fj-8ck" firstAttribute="trailing" secondItem="gHX-0Y-cwa" secondAttribute="trailing" id="zqK-gH-JxR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="olD-Kr-lbz"/>
                 </viewController>
