@@ -17,6 +17,7 @@
 		4460EFD729458E5C009E1406 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460EFD629458E5C009E1406 /* ToDoListTests.swift */; };
 		4460EFE129458E5C009E1406 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460EFE029458E5C009E1406 /* ToDoListUITests.swift */; };
 		4460EFE329458E5C009E1406 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460EFE229458E5C009E1406 /* ToDoListUITestsLaunchTests.swift */; };
+		4460EFF329459DC3009E1406 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460EFF229459DC3009E1406 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4460EFDC29458E5C009E1406 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4460EFE029458E5C009E1406 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		4460EFE229458E5C009E1406 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4460EFF229459DC3009E1406 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 		4460EFBB29458E5B009E1406 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				4460EFBC29458E5B009E1406 /* AppDelegate.swift */,
-				4460EFBE29458E5B009E1406 /* SceneDelegate.swift */,
-				4460EFC029458E5B009E1406 /* HomeViewController.swift */,
+				4460EFF129459DB7009E1406 /* Utilities */,
+				4460EFEF29459C17009E1406 /* Delegate */,
+				4460EFF029459C20009E1406 /* HomeView */,
 				4460EFC229458E5B009E1406 /* Main.storyboard */,
 				4460EFC829458E5C009E1406 /* Assets.xcassets */,
 				4460EFCA29458E5C009E1406 /* LaunchScreen.storyboard */,
@@ -128,6 +130,31 @@
 				4460EFE229458E5C009E1406 /* ToDoListUITestsLaunchTests.swift */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		4460EFEF29459C17009E1406 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4460EFBC29458E5B009E1406 /* AppDelegate.swift */,
+				4460EFBE29458E5B009E1406 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4460EFF029459C20009E1406 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4460EFC029458E5B009E1406 /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		4460EFF129459DB7009E1406 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4460EFF229459DC3009E1406 /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4460EFF329459DC3009E1406 /* Extensions.swift in Sources */,
 				4460EFC129458E5B009E1406 /* HomeViewController.swift in Sources */,
 				4460EFBD29458E5B009E1406 /* AppDelegate.swift in Sources */,
 				4460EFBF29458E5B009E1406 /* SceneDelegate.swift in Sources */,
